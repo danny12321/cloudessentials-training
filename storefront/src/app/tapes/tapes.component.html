@@ -1,0 +1,16 @@
+<nav
+  class="row justify-content-around bg-dark align-items-center"
+  Style="height: 15vh; width:100%"
+>
+  <h3 class="col-12 text-center" style="color:white">Tapes for sale!</h3>
+</nav>
+
+<div class="container" *ngIf="Items">
+  <div class="row text-center text-lg-left" *ngIf="Items">
+    <div class="col-lg-3 col-md-4 col-6" *ngFor="let item of Items">
+        <a href="#"> <!-- Dit moet vervangen worden door je API endpoint -->
+            <img class="img-fluid img-thumbnail mx-auto d-block" src="{{item}}" alt="">
+        </a>
+    </div>
+  </div>
+</div>
